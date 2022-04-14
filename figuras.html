@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./figuras.css" />
+    <title>figuras Geométricas-cursoPracticoDeJS</title>
+  </head>
+  <body>
+    <div class="parent">
+      <header>
+        <h1>cálculo de figuras geométricas</h1>
+        <hr />
+      </header>
+      <main>
+        <section>
+          <h2>Cuadrado</h2>
+          <form action="">
+            <label for="cuadrado">Ingrese el lado</label>
+            <input type="number" id="cuadrado" />
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+            <button type="button" onclick="calcArea()">Calcular la superficie</button>
+          </form>
+        </section>
+        <section>
+          <h2>Triángulo</h2>
+          <form action="">
+            <label for="ladoA">Ingrese el lado A</label>
+            <input type="number" id="ladoA" />
+            <label for="ladoB">Ingrese el lado B</label>
+            <input type="number" id="ladoB" />
+            <label for="ladoC">Ingrese el lado C</label>
+            <input type="number" id="ladoC" />
+            <label for="alt">Ingrese la altura</label>
+            <input type="number" id="alt" />
+            <button type="submit" onclick="calcularPerimetroTri()">Calcular el perímetro</button>
+            <button type="submit" onclick="calcAreaTri()">Calcular la superficie</button>
+          </form>
+        </section>
+        <section>
+          <h2>Círculo</h2>
+          <form action="">
+            <label for="circulo">Ingrese el radio</label>
+            <input id="circulo" name="circulo" type="number" />
+            <button type="submit" onclick="">Calcular el perímetro</button>
+            <button type="submit" onclick="">Calcular la superficie</button>
+          </form>
+        </section>
+      </main>
+
+      <script src="./figuras.js"></script>
+    </div>
+  </body>
+</html>

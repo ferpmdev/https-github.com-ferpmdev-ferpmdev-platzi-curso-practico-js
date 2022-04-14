@@ -1,0 +1,87 @@
+:root {
+  --gray: rgb(165, 126, 126);
+  --gray-1: rgb(198, 160, 160);
+  --white: rgb(231, 226, 226);
+  --back: rgb(43, 21, 92);
+  --back-1: rgb(86, 54, 155);
+}
+
+body {
+  background-color: var(--back);
+  margin: 0;
+  padding: 0 8rem 6rem;
+  color: var(--gray);
+  box-sizing: border-box;
+  background-image: repeating-linear-gradient(-45deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 20px, transparent 20px, transparent 40px);
+}
+
+html,
+body {
+  font-family: "Unica One", cursive;
+  text-align: center;
+  // height: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--gray-1);
+  padding: 0;
+  margin: 3rem 0 1rem 0;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  min-width: 100%;
+}
+
+main {
+  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 300px;
+  max-width: 30%;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 90%;
+  margin: 1rem;
+}
+
+input,
+button {
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+  border: none;
+  background-color: var(--back-1);
+  font-family: "Unica One", cursive;
+  min-width: 100%;
+  margin: 0.5rem 0;
+  color: var(--white);
+  display: block;
+}
+
+input {
+  padding: 0.6rem 0;
+  background-color: var(--gray-1);
+  margin: 0.2rem 0 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
